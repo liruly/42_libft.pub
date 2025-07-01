@@ -6,9 +6,10 @@
 
 ### Overview
 
-- This repository contains my project for Rank 00 of the core curriculum at [42Tokyo](https://42tokyo.jp/).
+- This repository contains my project for **Rank 00** of the core curriculum at [42Tokyo](https://42tokyo.jp/).
+- The project is done in **November 2024**.
 - The specific project assignments are confidential, but students are permitted to publish their own code.
-    - **Note to 42 students:** This code may have been modified after its official evaluation. I cannot guarantee it will pass.
+    - **Note to 42 students:** This code may have been modified after its official evaluation. I cannot guarantee it will pass reviews.
 - **Libft** is a project where students re-implement a set of standard C library functions to create a personal static library.
 - This library will be used in many subsequent projects from Rank 01 onwards.
 
@@ -44,22 +45,21 @@
     - `-L.` tells the compiler to search for libraries in the current directory.
     - `-lft` tells the linker to link the `libft` library.
 
----
-
 ## 日本語版 (Japanese Part)
 
 ### 概要
 
-- このリポジトリは、[42Tokyo](https://42tokyo.jp/) の共通課題 (Rank 00) のプロジェクトです。
+- このリポジトリは[42Tokyo](https://42tokyo.jp/) の基礎課程 (**Rank 00**) のプロジェクトです。
+- このプロジェクトは**2024.11**に完了しています。
 - 課題の詳細は公開が禁止されていますが、学生が自身で書いたコードを公開することは許可されています。
-    - **42の学生へ:** このコードは評価時から変更されています。そのため、レビューに合格することは一切保証しません。
+    - **42の学生へ:** このコードは評価時から変更されている可能性があります。そのため、このコードを参考にしたとき、レビューに合格することは保証しません。
 - **Libft** は、C言語の標準ライブラリ関数の一部を再実装し、個人用の静的ライブラリを作成するプロジェクトです。
-- このLibft静的ライブラリは、Rank01以降のプロジェクトで使用されます。
+- このLibftライブラリは、Rank01以降のプロジェクトで使用されます。
 
 ### 環境
 
 - **OS:** Ubuntu 22.04 LTS (Jammy Jellyfish)
-- **コンパイラ:** `cc` (`gcc`へのシンボリックリンクであることが多いです)
+- **コンパイラ:** `cc` (実際には`gcc`へのシンボリックリンクであることが多い)
 - **ビルドツール:** `make`
 
 ### 使い方
@@ -78,12 +78,12 @@
     ```sh
     make
     ```
-    このコマンドで `libft.a` が生成されます。
+    このコマンドで `libft.a` が生成されます
 
 4.  **ライブラリを使用する:**
-    作成した `libft.a` を自作のプログラム（例: `main.c`）とリンクするには、以下のコマンドを実行してください。
+    参考: 作成した `libft.a` を自作のプログラム（例: `main.c`）とリンクする方法
     ```sh
     cc main.c -L. -lft
     ```
-    - `-L.` は、現在のディレクトリでライブラリファイルを探します。
-    - `-lft` は、`libft` ライブラリをリンクします。
+    - `-L.` は、現在のディレクトリでライブラリファイルを探す
+    - `-lft` は、`libft` ライブラリをリンク
